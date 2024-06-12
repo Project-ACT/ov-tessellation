@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:doap="http://usefulinc.com/ns/doap#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="ub1bL24C19">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>DevOps - Project-ACT</foaf:name>
+    <foaf:homepage rdf:resource="https://github.com/DevOps-Project-ACT"/>
+    <foaf:mbox rdf:resource="mailto:devops@project-act.info"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL30C19">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Dan Hugo</foaf:name>
+    <foaf:homepage rdf:resource="https://github.com/DanHugoDanHugo"/>
+    <foaf:mbox rdf:resource="mailto:dhugo@reallycool.com"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL18C14">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Dan Hugo</foaf:name>
+    <foaf:homepage rdf:resource="https://github.com/DanHugoDanHugo"/>
+    <foaf:mbox rdf:resource="mailto:dhugo@reallycool.com"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL3C1">
+    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+    <doap:name>Tessellation Project Overview</doap:name>
+    <doap:shortdesc>The goal of the Tessellation Project is to establish an opt-in, decentralized means of project discovery to capture, communicate, and collaborate.</doap:shortdesc>
+    <doap:description> 
+       The Tessellation Overview is a starting point for specification, documentation, and ideation toward development of essential and useful components
+       which will make up a functional system of opt-in advertisement of organization and project participatns in one or more development communities to
+       fascilitate collaboration without a top down management infrastructure.
+    </doap:description>
+    <doap:homepage rdf:resource="https://github.com/Project-ACT/ov-tessellation"/>
+    <doap:bug-database rdf:resource="https://github.com/Project-ACT/ov-tessellation/issues"/>
+    <doap:Specification rdf:resource="https://github.com/Project-ACT/ov-tessellation/tree/main/doc"/>
+    <doap:license rdf:resource="http://spdx.org/licenses/GPL-3.0-only"/>
+    <doap:maker rdf:nodeID="ub1bL18C14"/>
+    <doap:maintainer rdf:nodeID="ub1bL24C19"/>
+    <doap:documenter rdf:nodeID="ub1bL30C19"/>
+    <doap:repository rdf:nodeID="ub1bL36C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL36C19">
+    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#GitRepository"/>
+    <doap:location rdf:resource="https://github.com/Project-ACT/ov-tessellation.git"/>
+    <doap:browse rdf:resource="https://github.com/Project-ACT/ov-tessellation"/>
+  </rdf:Description>
+</rdf:RDF>

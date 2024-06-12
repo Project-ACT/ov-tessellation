@@ -1,0 +1,40 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+[]
+  a doap:Project ;
+  doap:name "Tessellation Project Overview" ;
+  doap:shortdesc  "The goal of the Tessellation Project is to establish an opt-in, decentralized means of project discovery to capture, communicate, and collaborate." ;
+  doap:description 
+    """ 
+       The Tessellation Overview is a starting point for specification, documentation, and ideation toward development of essential and useful components
+       which will make up a functional system of opt-in advertisement of organization and project participatns in one or more development communities to
+       fascilitate collaboration without a top down management infrastructure.
+    """ ;
+  doap:homepage <https://github.com/Project-ACT/ov-tessellation> ;
+  doap:bug-database <https://github.com/Project-ACT/ov-tessellation/issues> ;
+  doap:Specification <https://github.com/Project-ACT/ov-tessellation/tree/main/doc> ;
+  doap:license <http://spdx.org/licenses/GPL-3.0-only> ;
+  doap:maker [
+    a foaf:Person ;
+    foaf:name "Dan Hugo" ;
+    foaf:homepage <https://github.com/DanHugoDanHugo> ;
+    foaf:mbox <mailto:dhugo@reallycool.com>
+  ] ;
+  doap:maintainer [
+    a foaf:Person ;
+    foaf:name "DevOps - Project-ACT" ;
+    foaf:homepage <https://github.com/DevOps-Project-ACT> ;
+    foaf:mbox <mailto:devops@project-act.info>
+  ] ;
+  doap:documenter [
+    a foaf:Person ;
+    foaf:name "Dan Hugo" ;
+    foaf:homepage <https://github.com/DanHugoDanHugo> ;
+    foaf:mbox <mailto:dhugo@reallycool.com>
+  ] ;
+  doap:repository [
+    a doap:GitRepository ;
+    doap:location <https://github.com/Project-ACT/ov-tessellation.git> ;
+    doap:browse <https://github.com/Project-ACT/ov-tessellation>
+  ] .
