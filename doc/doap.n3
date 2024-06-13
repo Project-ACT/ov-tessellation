@@ -1,7 +1,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-[]
+<https://project-act.info/projects/ov-tessellation>
   a doap:Project ;
   doap:name "Tessellation Project Overview" ;
   doap:shortdesc  "The goal of the Tessellation Project is to establish an opt-in, decentralized means of project discovery to capture, communicate, and collaborate." ;
@@ -15,26 +15,24 @@
   doap:bug-database <https://github.com/Project-ACT/ov-tessellation/issues> ;
   doap:Specification <https://github.com/Project-ACT/ov-tessellation/tree/main/doc> ;
   doap:license <http://spdx.org/licenses/GPL-3.0-only> ;
-  doap:maker [
-    a foaf:Person ;
-    foaf:name "Dan Hugo" ;
-    foaf:homepage <https://github.com/DanHugoDanHugo> ;
-    foaf:mbox <mailto:dhugo@reallycool.com>
-  ] ;
-  doap:maintainer [
-    a foaf:Person ;
+  doap:maker <https://project-act.info/people/DanHugo> ;
+  doap:maintainer <https://project-act.info/people/DevOps> ;
+  doap:documenter <https://project-act.info/people/DanHugo> ;
+  doap:repository <https://project-act.info/projects/ov-tessellation/repo> .
+
+<https://project-act.info/projects/ov-tessellation/repo>
+  a doap:GitRepository ;
+    doap:location <https://github.com/Project-ACT/ov-tessellation.git> ;
+    doap:browse <https://github.com/Project-ACT/ov-tessellation> .
+
+<https://project-act.info/people/DevOps>
+  a foaf:Person ;
     foaf:name "DevOps - Project-ACT" ;
     foaf:homepage <https://github.com/DevOps-Project-ACT> ;
-    foaf:mbox <mailto:devops@project-act.info>
-  ] ;
-  doap:documenter [
-    a foaf:Person ;
+    foaf:mbox <mailto:devops@project-act.info> .
+
+<https://project-act.info/people/DanHugo>
+  a foaf:person ;
     foaf:name "Dan Hugo" ;
     foaf:homepage <https://github.com/DanHugoDanHugo> ;
-    foaf:mbox <mailto:dhugo@reallycool.com>
-  ] ;
-  doap:repository [
-    a doap:GitRepository ;
-    doap:location <https://github.com/Project-ACT/ov-tessellation.git> ;
-    doap:browse <https://github.com/Project-ACT/ov-tessellation>
-  ] .
+    foaf:mbox <mailto:dhugo@reallycool.com> .
