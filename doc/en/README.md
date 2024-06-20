@@ -28,4 +28,5 @@ The specification is broken down along those component lines with the following 
 | [Graph Local Management](graph-local.md)         | Author, manage, publish, update RDF data structures for projects and organizations         |
 | [Graph Data Discovery](graph-discovery.md)       | Automated spider robot to traverse known nodes and discover new nodes and associated data  |
 | [Graph Catalog Management](graph-catalog.md)     | Store, update, index, and search graph data for various uses                               |
+| [Graph Visualizer](graph-visualize.md)           | Render network graphs, tessellation maps, and data charts based on catalog data            |
 | [Notifier](graph-msg.md)                         | Alert RDF maintainers of data structure, format, syntax, and other errors                  |
