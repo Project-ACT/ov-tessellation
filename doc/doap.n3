@@ -1,3 +1,10 @@
+# Description of a Project in machine-readable form
+#
+# This is a DOAP file - see https://github.com/ewilderj/doap/wiki
+# This is RDF data - see https://www.w3.org/RDF/
+# This is written in Notation3 - see https://notation3.org/
+# This is serialized to RDF/XML format for publication, with an .rdf extension
+
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
