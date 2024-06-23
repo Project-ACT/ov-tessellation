@@ -22,10 +22,11 @@
   doap:bug-database <https://github.com/Project-ACT/ov-tessellation/issues> ;
   doap:Specification <https://github.com/Project-ACT/ov-tessellation/tree/main/doc> ;
   doap:license <http://spdx.org/licenses/GPL-3.0-only> ;
-  doap:maker <https://project-act.info/people/DanHugo> ;
   doap:maintainer <https://project-act.info/people/DevOps> ;
   doap:documenter <https://project-act.info/people/DanHugo> ;
-  doap:repository <https://project-act.info/projects/ov-tessellation/repo> .
+  doap:repository <https://project-act.info/projects/ov-tessellation/repo> ;
+
+  foaf:maker <https://project-act.info/people/DanHugo> .
 
 <https://project-act.info/projects/ov-tessellation/repo>
   a doap:GitRepository ;
