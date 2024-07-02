@@ -44,9 +44,10 @@ body:
         - **Organization Maintainer** responsible for a cohort of one or more people
         - **Organization Member** is anyone considered to be a part of an organization
         - **Project Maintainer** responsible for managing project(s)
-        - **Contributor** a person who is part of an organization contributing to project(s)
+        - **Project Contributor** a person who is part of an organization contributing to project(s)
         - **External Contributor** a person discovering projects
         - **Casual User** a curious person checking stuff out
+        - **Automated User** a spider or other bot or similar
 
   - type: markdown
     attributes:
@@ -67,9 +68,10 @@ body:
         - Organization Maintainer
         - Organization Member
         - Project Maintainer
-        - Contributor
+        - Project Contributor
         - External Contributor
         - Casual User
+        - Automated User
       default: 0
     validations:
       required: true
