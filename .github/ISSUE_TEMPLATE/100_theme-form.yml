@@ -1,0 +1,100 @@
+# Copyright (C) 2024 Project-ACT
+# 
+# This file is part of ov-tessellation.
+# 
+# ov-tessellation is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# ov-tessellation is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
+
+name: Theme
+description: Agile Theme for project design and planning, a top-level grouping of Epics
+title: "[Theme]: Edit title after colon"
+labels: ["theme", "triage"]
+projects: ["project-act/2"]
+assignees:
+  - DanHugoDanHugo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Agile Theme
+        
+        A Theme describes a top-level view of what a project will accomplish, defining
+        the goals of a phase of development, detailed in related Epics, Features, and
+        User Stories.
+
+  - type: markdown
+    attributes:
+      value: "# Theme Description"
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Phase Mission Statement
+      description: Goals we hope to accomplish during this phase of development
+      placeholder: A problem to address, a gap to fill, a need to satisfy… possibly plural
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Success Metric"
+        
+  - type: textarea
+    id: success
+    attributes:
+      label: How we will know we reached the end of this development phase
+      description: A container holding a group of goals…
+      placeholder: |
+        - A list of one or more measurable
+        - and demonstrably-achieved
+        - successes
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Linked Epics(s)"
+  - type: textarea
+    id: tracking
+    attributes:
+      label: Tracking…
+      description: Themes are made of Epics
+      placeholder: |
+        - [ ] A task list of Epics tracked by this Theme
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# References"
+        
+  - type: textarea
+    id: references
+    attributes:
+      label: Links to external specs, documents, RFCs, accepted standards, examples, etc
+      description: Place useful information close for implementors to find…
+      placeholder: |
+        - Links to resources to aid in implementation of Epics attached to this Theme
+        - to External API Specifications, Accessibility Standards
+        - to Verification/Certification tools
+        - to Similar features in other projects/platforms
+
+    validations:
+      required: true
+
+  - type: markdown
+    attributes: 
+      value: |
+        ## Helpful Issue-filing Links
+        - [Linking to Issues and PRs across Repositories](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#issues-and-pull-requests)

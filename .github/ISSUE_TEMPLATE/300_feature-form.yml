@@ -1,0 +1,118 @@
+# Copyright (C) 2024 Project-ACT
+# 
+# This file is part of ov-tessellation.
+# 
+# ov-tessellation is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# ov-tessellation is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
+
+name: Feature
+description: Agile Feature for project design and planning, a top-level grouping of User Stories
+title: "[Feature]: Edit title after colon"
+labels: ["feature", "triage"]
+projects: ["project-act/2"]
+assignees:
+  - DanHugoDanHugo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Agile Feature
+        
+        A Feature is a general, yet focused description of some aspect of a project to be implemented
+        during an Epic, detailed at a more granular level as a collection of one or more related User Stories.
+
+        A Feature may also indicate an implementation requirement that can be further detailed with User Stories, 
+        for example an OpenAPI implementation, 
+
+  - type: markdown
+    attributes:
+      value: "# Description"
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: A general description of some behavior, interface, experience, etc.
+      description: To be described in specific detail with one or more User Stories…
+      placeholder: A Feature might be an adjustable perpetual calendar, grouping more specific User Stories about month and year flipping, etc.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Success Metric"
+        
+  - type: textarea
+    id: success
+    attributes:
+      label: How we know we achieved Working Feature
+      description: A container holding a group of goals…
+      placeholder: |
+        - A list of one or more measurable
+        - and demonstrably-achieved
+        - successes
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Linked to Epic(s)"
+
+  - type: textarea
+    id: tracked-by
+    attributes:
+      label: Tracked by…
+      description: Epics are made of Features
+      placeholder: |
+        - [ ] A task list of Epic(s) tracking this User Story
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# Linked User Stories"
+
+  - type: textarea
+    id: tracking
+    attributes:
+      label: Tracking…
+      description: Features are made of Stories
+      placeholder: |
+        - [ ] A task list of User Stories tracked by this Feature
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# References"
+        
+  - type: textarea
+    id: references
+    attributes:
+      label: Links to external specs, documents, RFCs, accepted standards, examples, etc
+      description: Place useful information close for implementors to find…
+      placeholder: |
+        - Links to resources to aid in implementation of User Stories attached to this Feature
+        - to External API Specifications, Accessibility Standards
+        - to Verification/Certification tools
+        - to Similar features in other projects/platforms
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes: 
+      value: |
+        ## Helpful Issue-filing Links
+        - [Linking to Issues and PRs across Repositories](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#issues-and-pull-requests)

@@ -1,0 +1,116 @@
+# Copyright (C) 2024 Project-ACT
+# 
+# This file is part of ov-tessellation.
+# 
+# ov-tessellation is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# ov-tessellation is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
+
+name: Epic
+description: Agile Epic for project design and planning, a top-level grouping of Features and User Stories
+title: "[Epic]: Edit title after colon"
+labels: ["epic", "triage"]
+projects: ["project-act/2"]
+assignees:
+  - DanHugoDanHugo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Agile Epic
+        
+        An Epic is a collection of related Features which combine to form a
+        level of functionality within a larger project unit, here called a Theme
+        (also called an Initiative by some).
+
+  - type: markdown
+    attributes:
+      value: "# Description"
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Features and User Stories over an Implementation Interval
+      description: A container holding a group of to-dos…
+      placeholder: A Summary of what might be accomplished in this phase of the project Theme timeline
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Success Metric"
+        
+  - type: textarea
+    id: success
+    attributes:
+      label: How we know we achieved Epic Success
+      description: A container holding a group of goals…
+      placeholder: |
+        - A list of one or more measurable
+        - and demonstrably-achieved
+        - successes
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Linked to Theme(s)"
+
+  - type: textarea
+    id: tracked-by
+    attributes:
+      label: Tracked by…
+      description: Themes are made of Epics
+      placeholder: |
+        - [ ] A task list of Theme(s) tracking this Epic
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# Linked Feature(s)"
+
+  - type: textarea
+    id: tracking
+    attributes:
+      label: Tracking…
+      description: Epics are made of Features
+      placeholder: |
+        - [ ] A task list of Features tracked by this Epic
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# References"
+        
+  - type: textarea
+    id: references
+    attributes:
+      label: Links to external specs, documents, RFCs, accepted standards, examples, etc
+      description: Place useful information close for implementors to find…
+      placeholder: |
+        - Links to resources to aid in implementation of Features attached to this Epic
+        - to External API Specifications, Accessibility Standards
+        - to Verification/Certification tools
+        - to Similar features in other projects/platforms
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes: 
+      value: |
+        ## Helpful Issue-filing Links
+        - [Linking to Issues and PRs across Repositories](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#issues-and-pull-requests)
