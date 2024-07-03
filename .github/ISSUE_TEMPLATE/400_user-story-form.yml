@@ -123,6 +123,21 @@ body:
 
   - type: markdown
     attributes:
+      value: "# Linked Implementation Tasks"
+
+  - type: textarea
+    id: tracking
+    attributes:
+      label: Tracking…
+      description: Tasks in project repositories implementing this story
+      placeholder: |
+        - [ ] A task list of Task issues tracked by this User Story
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
       value: "# References"
         
   - type: textarea
