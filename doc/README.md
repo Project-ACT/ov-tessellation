@@ -20,3 +20,7 @@
 # Tessellation Project Documents
 
 In order to be inclusive across language barriers, the documentation for this project is made translatable into other languages using the [GitLocalize](https://gitlocalize.com/) tools which have, as of this writing, been made available in the organization as an application to use for any repository.
+
+## Project DOAP source
+
+The general source file for the project DOAP file, if defined declaratively using languages such as Notation3 (.n3) or Terse Triple Language (.ttl) may be found in this directory, with optional localized terms such as description, short description, and others found in language subdirectories (en, es, etc).

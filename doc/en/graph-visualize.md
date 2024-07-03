@@ -20,3 +20,20 @@
 # Tessellation Visualization
 
 Process catalogued graph data to build visualizations of various kinds, including but not limited to network graphs, project graphs, tiles in the tessellation with geo data for map plots, and whatever else might come in handy.
+
+There are several forms a visualization of the Tessellation might take, a few ideas are listed here (not exhaustive).
+
+## Traditional Output
+
+- It may be useful to generate a csv file of organization, projects, etc for the purposes of constructing a classic spreadsheet
+- Plain old text file output
+- JSON output as a part of a web page generation pipeline
+- Some query result (a subset, or maybe the entire catalog) in an RDF structure such as n3 or rdf/xml
+- Generation of an RSS update feed (RSS v1.0 of course)
+
+## Graph Output
+
+- JSON output for Nodes and Edges using NetworkX for example, local display of some view of graph data
+- Some fun options like KML output to render Placemarks and polygons and whatnot on a Map (Google Maps, Google Earth, WorldWind, etc etc)
+  - [NASA WorldWind Project](https://worldwind.arc.nasa.gov/)
+  - [Cesium Platform for 3D Geospatial](https://cesium.com/)

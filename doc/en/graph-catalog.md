@@ -18,3 +18,17 @@
 -->
 
 # Tessellation Graph Catalog
+
+Capture discovered graph data and manage storage in a graph database or similar, facilitating queries and foreign data
+interfaces, reporting in different ways as needed, etc.
+
+## Graph Database
+
+One of the fundamental properties of an Ontology System such as that which can be expressed RDF, is the ability to query
+a database of findings for relations between nodes and other data contained within them or represented by them.
+
+We can presume that there is a suitable database already available (this is true) to store graph data described with our
+RDF findings, and that the common SPARQL query language will be available (which it will be).
+
+We are not limited, however, to the usual database and query language options if more leading edge, or more-easily-integrated,
+or even completely novel ideas arise.

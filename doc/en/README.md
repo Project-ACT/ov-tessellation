@@ -29,4 +29,10 @@ The specification is broken down along those component lines with the following 
 | [Graph Data Discovery](graph-discovery.md)       | Automated spider robot to traverse known nodes and discover new nodes and associated data  |
 | [Graph Catalog Management](graph-catalog.md)     | Store, update, index, and search graph data for various uses                               |
 | [Graph Visualizer](graph-visualize.md)           | Render network graphs, tessellation maps, and data charts based on catalog data            |
-| [Notifier](graph-msg.md)                         | Alert RDF maintainers of data structure, format, syntax, and other errors                  |
+| [Graph Message Notifier](graph-msg.md)           | Alert RDF maintainers of data structure, format, syntax, and other errors                  |
+
+## Localized DOAP Source
+
+In cases where localized items (description, short description, etc) strings would be beneficial, creating the localized parts of the project DOAP source file(s) in this directory will make it clear which localization language is intended. Localization tools may be used to set the language of origin and the translation targets accordingly.
+
+The same practice may be used for an organization FOAF source file with optional localizations.
