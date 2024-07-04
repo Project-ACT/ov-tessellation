@@ -48,6 +48,11 @@ body:
         - **External Contributor** a person discovering projects
         - **Casual User** a curious person checking stuff out
         - **Automated User** a spider or other bot or similar
+        - **Catalog Maintainer** oversees the gathered data from remote orgs and projects
+        - **Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects
+        - **Visualization Maintainer** integrates graph visualizations into other platform(s)
+        - **Notification Maintainer** manages integration of notifications with messaging tools and channels
+        - **Tessellation Contributor** works on Tessellation components in any capacity
 
   - type: markdown
     attributes:
@@ -72,6 +77,11 @@ body:
         - External Contributor
         - Casual User
         - Automated User
+        - Catalog Maintainer
+        - Spider Maintainer
+        - Visualization Maintainer
+        - Notification Maintainer
+        - Tessellation Contributor
       default: 0
     validations:
       required: true
