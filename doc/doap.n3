@@ -25,7 +25,8 @@
   doap:maintainer <https://project-act.info/people/DevOps> ;
   doap:documenter <https://project-act.info/people/DanHugo> ;
   doap:repository <https://project-act.info/projects/ov-tessellation/repo> ;
-
+  
+  # Author of this DOAP document
   foaf:maker <https://project-act.info/people/DanHugo> .
 
 <https://project-act.info/projects/ov-tessellation/repo>
