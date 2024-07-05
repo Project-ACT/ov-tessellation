@@ -19,15 +19,15 @@
 
 # Tessellation Overview
 
-This Overview repository is a specification and documentation component of the Tessellation Project. Please do not add code or other resources to this repository.
+This Overview repository is an initiative and documentation component of the Tessellation Project. Please do not add code to this repository.
 
-The goal of the Tessellation Project is to establish an opt-in, decentralized means of discovery to capture, communicate, and collaborate.
+The goal of the Tessellation Project is to establish an opt-in, decentralized means of discovery to connect, communicate, and collaborate.
 
 Making use of long-standing, tried-and-tested methods of meta data structure, publishing, and sharing via automated spider pull, we can bring new individuals, cohorts, and organizations into a collaborative, bottom-up environment and, with individual project discovery and capture, assist with discovery of overlap and potential points of collaboration. Communication is, of course, essential.
 
 ## Project Policies
 
-Unless otherwise and specifically indicated with replacement files in this repository, this project will adhere to the default Innovate for Vegas Foundation policies for Code of Conduct and Contributing, found at
+Unless otherwise and specifically indicated with replacement files in this repository, this project will adhere to the default Project-ACT policies for Code of Conduct and Contributing, found at
 
 * [Code of Conduct - Project-ACT](https://github.com/Project-ACT/.github/blob/main/CODE_OF_CONDUCT.md)
 * [Contributing to this Project - Project-ACT](https://github.com/Project-ACT/.github/blob/main/CONTRIBUTING.md)
