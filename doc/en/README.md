@@ -17,11 +17,11 @@
  along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
-# Tessellation Project Specification
+# Tessellation Project Initiative
 
 The Tessellation project is composed of several components, each ideally developed on a platform that serves the required function and performance, and which can interoperate with other components in a language agnostic fashion.
 
-The specification is broken down along those component lines with the following (with links to individual local specification files):
+The initiative is broken down along those component lines with the following (with links to individual local specification files):
 
 | Component                                        | Description                                                                                |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------|
