@@ -17,11 +17,13 @@
  along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
-# Tessellation Overview
+# Tessellation Initiative Overview
 
-This Overview repository is an initiative and documentation component of the Tessellation Project. Please do not add code to this repository.
+This Overview repository is an initiative and documentation component of the *Tessellation Initiative Project*.
 
-The goal of the Tessellation Project is to establish an opt-in, decentralized means of discovery to connect, communicate, and collaborate.
+**Please do not add code to this repository.**
+
+The goal of the Tessellation Initiative is to establish an opt-in, decentralized means of discovery to connect, communicate, and collaborate, initially among individual civic volunteers, formal and information civic volunteer organizations and perhaps others. There is no reason this scheme would not work to loosely-connect any individuals and groups around projects or other endeavors.
 
 Making use of long-standing, tried-and-tested methods of meta data structure, publishing, and sharing via automated spider pull, we can bring new individuals, cohorts, and organizations into a collaborative, bottom-up environment and, with individual project discovery and capture, assist with discovery of overlap and potential points of collaboration. Communication is, of course, essential.
 
