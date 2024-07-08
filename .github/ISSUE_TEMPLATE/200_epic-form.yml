@@ -32,32 +32,34 @@ body:
         level of functionality within a larger project unit, here called a Theme
         (also called an Initiative by some).
 
+        We can express an Epic directly as an Objective and Key Results (OKRs).
+
   - type: markdown
     attributes:
-      value: "# Description"
+      value: "# Objective"
         
   - type: textarea
-    id: description
+    id: objective
     attributes:
-      label: Features and User Stories over an Implementation Interval
-      description: A container holding a group of to-dos…
-      placeholder: A Summary of what might be accomplished in this phase of the project Theme timeline
+      label: The Objective of this Epic, We aim to…
+      description: A focused goal for this phase of the timeline
+      placeholder: A brief description of what we aim to accomplished in this phase of the project Theme timeline
     validations:
       required: true
 
   - type: markdown
     attributes:
-      value: "# Success Metric"
+      value: "# Key Results"
         
   - type: textarea
     id: success
     attributes:
-      label: How we know we achieved Epic Success
-      description: A container holding a group of goals…
+      label: Key Results measuring Objective outcome…
+      description: A list of Key Results indicating success
       placeholder: |
-        - A list of one or more measurable
-        - and demonstrably-achieved
-        - successes
+        - [ ] A list of one or more measurable
+        - [ ] and demonstrably-achieved results
+        - [ ] Check off during Wrap-Up
     validations:
       required: true
 
@@ -105,6 +107,21 @@ body:
         - to External API Specifications, Accessibility Standards
         - to Verification/Certification tools
         - to Similar features in other projects/platforms
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# Wrap-Up"
+
+  - type: textarea
+    id: wrapup
+    attributes:
+      label: Post-Epic comments, observations, notes
+      description: To aid in iterative process improvement and learning
+      placeholder: |
+        Anything that may contribute to the next Epics and other project effort.
 
     validations:
       required: false
