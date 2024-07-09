@@ -36,10 +36,10 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Description"
+      value: "# Feature Objective"
         
   - type: textarea
-    id: description
+    id: objective
     attributes:
       label: A general description of some behavior, interface, experience, etc.
       description: To be described in specific detail with one or more User Stories…
@@ -49,17 +49,17 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Success Metric"
+      value: "# Key Results"
         
   - type: textarea
-    id: success
+    id: keyresults
     attributes:
       label: How we know we achieved Working Feature
       description: A container holding a group of goals…
       placeholder: |
-        - A list of one or more measurable
-        - and demonstrably-achieved
-        - successes
+        - [ ] A list of one or more measurable
+        - [ ] and demonstrably-achieved results
+        - [ ] Check off during Wrap-Up
     validations:
       required: true
 
@@ -107,6 +107,21 @@ body:
         - to External API Specifications, Accessibility Standards
         - to Verification/Certification tools
         - to Similar features in other projects/platforms
+
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "# Wrap-Up"
+
+  - type: textarea
+    id: wrapup
+    attributes:
+      label: Post-Feature comments, observations, notes
+      description: To aid in iterative process improvement and learning
+      placeholder: |
+        Anything that may contribute to other Features and other project effort.
 
     validations:
       required: false

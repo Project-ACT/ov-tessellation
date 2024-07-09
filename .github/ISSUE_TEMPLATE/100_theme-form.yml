@@ -28,36 +28,36 @@ body:
       value: |
         # Agile Theme
         
-        A Theme describes a top-level view of what a project will accomplish, defining
-        the goals of a phase of development, detailed in related Epics, Features, and
-        User Stories.
+        A Theme describes a top-level view of the Objective of a component of a project will,
+        defining the goals and Key Results of a phase of development, detailed further in
+        related Epics, Features, and User Stories.
 
   - type: markdown
     attributes:
-      value: "# Theme Description"
+      value: "# Theme Objective"
         
   - type: textarea
-    id: description
+    id: objective
     attributes:
-      label: Project Phase Mission Statement
-      description: Goals we hope to accomplish during this phase of development
-      placeholder: A problem to address, a gap to fill, a need to satisfy… possibly plural
+      label: The Objective of this Theme, We aim to…
+      description: Goals we hope to accomplish with this broadly-defined project element
+      placeholder: A brief overview of what we aim to accomplished with this project component
     validations:
       required: true
 
   - type: markdown
     attributes:
-      value: "# Success Metric"
+      value: "# Key Results"
         
   - type: textarea
-    id: success
+    id: keyresults
     attributes:
-      label: How we will know we reached the end of this development phase
-      description: A container holding a group of goals…
+      label: Key Results measuring Objective outcome…
+      description: A list of Key Results indicating success
       placeholder: |
-        - A list of one or more measurable
-        - and demonstrably-achieved
-        - successes
+        - [ ] A list of one or more measurable
+        - [ ] and demonstrably-achieved results
+        - [ ] Check off during Wrap-Up
     validations:
       required: true
 
@@ -92,6 +92,21 @@ body:
 
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: "# Wrap-Up"
+
+  - type: textarea
+    id: wrapup
+    attributes:
+      label: Post-Theme comments, observations, notes
+      description: To aid in iterative process improvement and learning
+      placeholder: |
+        Anything that may contribute to ongoing success of this Theme or other parts of the project effort.
+
+    validations:
+      required: false
 
   - type: markdown
     attributes: 
