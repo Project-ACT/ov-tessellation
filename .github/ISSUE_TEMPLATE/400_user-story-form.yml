@@ -120,30 +120,37 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Linked to Feature(s)"
-
-  - type: textarea
-    id: tracked-by
-    attributes:
-      label: Tracked by…
-      description: Features are made of Stories
-      placeholder: |
-        - [ ] A task list of Feature(s) tracking this User Story
-
-    validations:
-      required: false
+      value: "# Intra-Overview Linked Issue(s)"
 
   - type: markdown
     attributes:
-      value: "# Linked Implementation Tasks"
+      value: |
+        Issues should be linked by url (see info for issue linking bottom of page) for a
+        variety of reasons, with tags in a task list indicating the link relationship.
+        Identifying relationships between issues within the initiative hierarchy should
+        be easier than without this information.
+
+        Tags and Linked Issues
+        - feature: -> the parent Feature in this Agile hierarchy for this User Story
+        - merge-to: -> a User Story that is a merging of this and other User Stories
+        - merge-from: -> a User Story that was merged into this User Story
+        - split-to: -> a User Story that is one of multiple Themes derived from this User Stories
+        - split-from: -> a User Story that was split into this and other User Stories
+        - spike-to: -> a virtual User Story for planning and estimation of related User Stories
+        - spoke-from: --> a real User Story connected to a virtual spike User Story
+
+        Merge-to and Split-to User Story issues should be closed in favor of the consolidated or expanded
+        User Story issues, as appropriate. Do not delete them, mark as merge or split and closed.
 
   - type: textarea
-    id: tracking
+    id: linking
     attributes:
-      label: Tracking…
-      description: Tasks in project repositories implementing this story
+      label: Issues linked within the Project Overview Repository to this Theme issue
+      description: "Tag entries with epic: , feature:, story:, merge-to:, split-from:, etc"
       placeholder: |
-        - [ ] A task list of Task issues tracked by this User Story
+        - [ ] epic: issue link within overview
+        - [ ] merge-to: this issue merges into a new issue
+        - [ ] split-from: this issue is one refactor from a parent Theme issue
 
     validations:
       required: false

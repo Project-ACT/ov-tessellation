@@ -65,30 +65,38 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Linked to Epic(s)"
-
-  - type: textarea
-    id: tracked-by
-    attributes:
-      label: Tracked by…
-      description: Epics are made of Features
-      placeholder: |
-        - [ ] A task list of Epic(s) tracking this User Story
-
-    validations:
-      required: false
+      value: "# Intra-Overview Linked Issue(s)"
 
   - type: markdown
     attributes:
-      value: "# Linked User Stories"
+      value: |
+        Issues should be linked by url (see info for issue linking bottom of page) for a
+        variety of reasons, with tags in a task list indicating the link relationship.
+        Identifying relationships between issues within the initiative hierarchy should
+        be easier than without this information.
+
+        Tags and Linked Issues
+        - epic: -> a parent Epic in this Agile hierarchy for this Feature
+        - story: -> a child User Story in this Agile Hierarchy for this Feature
+        - merge-to: -> a Feature that is a merging of this and other Feature(s)
+        - merge-from: -> a Feature that was merged into this Features
+        - split-to: -> a Feature that is one of multiple Themes derived from this Features
+        - split-from: -> a Feature that was split into this and other Features
+        - spike-to: -> a virtual Feature for planning and estimation of related Features
+        - spoke-from: --> a real Theme connected to a virtual spike Theme
+
+        Merge-to and Split-to Feature issues should be closed in favor of the consolidated or expanded
+        Feature issues, as appropriate. Do not delete them, mark as merge or split and closed.
 
   - type: textarea
-    id: tracking
+    id: linking
     attributes:
-      label: Tracking…
-      description: Features are made of Stories
+      label: Issues linked within the Project Overview Repository to this Theme issue
+      description: "Tag entries with epic: , feature:, story:, merge-to:, split-from:, etc"
       placeholder: |
-        - [ ] A task list of User Stories tracked by this Feature
+        - [ ] epic: issue link within overview
+        - [ ] merge-to: this issue merges into a new issue
+        - [ ] split-from: this issue is one refactor from a parent Theme issue
 
     validations:
       required: false

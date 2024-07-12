@@ -63,14 +63,37 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Linked Epics(s)"
-  - type: textarea
-    id: tracking
+      value: "# Intra-Overview Linked Issue(s)"
+
+  - type: markdown
     attributes:
-      label: Tracking…
-      description: Themes are made of Epics
+      value: |
+        Issues should be linked by url (see info for issue linking bottom of page) for a
+        variety of reasons, with tags in a task list indicating the link relationship.
+        Identifying relationships between issues within the initiative hierarchy should
+        be easier than without this information.
+
+        Tags and Linked Issues
+        - epic: -> an Epic in this Agile hierarchy
+        - merge-to: -> a Theme that is a merging of this and other Theme(s)
+        - merge-from: -> a Theme that was merged into this Theme
+        - split-to: -> a Theme that is one of multiple Themes derived from this Theme
+        - split-from: -> a Theme that was split into this and other Themes
+        - spike-to: -> a virtual Theme for planning and estimation of related Themes
+        - spoke-from: --> a real Theme connected to a virtual spike Theme
+
+        Merge-to and Split-to Theme issues should be closed in favor of the consolidated or expanded
+        Theme issues, as appropriate. Do not delete them, mark as merge or split and closed.
+
+  - type: textarea
+    id: linking
+    attributes:
+      label: Issues linked within the Project Overview Repository to this Theme issue
+      description: "Tag entries with epic: , feature:, story:, merge-to:, split-from:, etc"
       placeholder: |
-        - [ ] A task list of Epics tracked by this Theme
+        - [ ] epic: issue link within overview
+        - [ ] merge-to: this issue merges into a new issue
+        - [ ] split-from: this issue is one refactor from a parent Theme issue
 
     validations:
       required: false
