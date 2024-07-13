@@ -28,11 +28,11 @@ body:
       value: |
         # Agile Feature
         
-        A Feature is a general, yet focused description of some aspect of a project to be implemented
+        A **Feature** is a general, yet focused description of some aspect of the Initiative to be implemented
         during an Epic, detailed at a more granular level as a collection of one or more related User Stories.
 
         A Feature may also indicate an implementation requirement that can be further detailed with User Stories, 
-        for example an OpenAPI implementation, 
+        for example an OpenAPI implementation, or some established API or Protocol, etc.
 
   - type: markdown
     attributes:
@@ -83,10 +83,11 @@ body:
         - split-to: -> a Feature that is one of multiple Themes derived from this Features
         - split-from: -> a Feature that was split into this and other Features
         - spike-to: -> a virtual Feature for planning and estimation of related Features
-        - spoke-from: --> a real Theme connected to a virtual spike Theme
+        - spike-from: --> a real Theme connected to a virtual spike Theme
 
-        Merge-to and Split-to Feature issues should be closed in favor of the consolidated or expanded
-        Feature issues, as appropriate. Do not delete them, mark as merge or split and closed.
+        Merge-to and Split-to Feature issue(s) should be **Closed as Not Planned** in favor of the
+        consolidated or expanded Feature issue(s), as appropriate. Do not delete, mark as merge
+        or split and **Closed as Not Planned**.
 
   - type: textarea
     id: linking

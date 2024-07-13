@@ -28,8 +28,8 @@ body:
       value: |
         # Agile Theme
         
-        A Theme describes a top-level view of the Objective of a component of a project will,
-        defining the goals and Key Results of a phase of development, detailed further in
+        A Theme describes the **Objective** of a component of an entire initiative,
+        defining the goals and **Key Results** of a phase of development, detailed further in
         related Epics, Features, and User Stories.
 
   - type: markdown
@@ -80,10 +80,11 @@ body:
         - split-to: -> a Theme that is one of multiple Themes derived from this Theme
         - split-from: -> a Theme that was split into this and other Themes
         - spike-to: -> a virtual Theme for planning and estimation of related Themes
-        - spoke-from: --> a real Theme connected to a virtual spike Theme
+        - spike-from: --> a real Theme connected to a virtual spike Theme
 
-        Merge-to and Split-to Theme issues should be closed in favor of the consolidated or expanded
-        Theme issues, as appropriate. Do not delete them, mark as merge or split and closed.
+        Merge-to and Split-to Theme issue(s) should be **Closed as Not Planned** in favor of the
+        consolidated or expanded Theme issue(s), as appropriate. Do not delete, mark as merge
+        or split and **Closed as Not Planned**.
 
   - type: textarea
     id: linking

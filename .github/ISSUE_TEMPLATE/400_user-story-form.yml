@@ -138,10 +138,11 @@ body:
         - split-to: -> a User Story that is one of multiple Themes derived from this User Stories
         - split-from: -> a User Story that was split into this and other User Stories
         - spike-to: -> a virtual User Story for planning and estimation of related User Stories
-        - spoke-from: --> a real User Story connected to a virtual spike User Story
+        - spike-from: --> a real User Story connected to a virtual spike User Story
 
-        Merge-to and Split-to User Story issues should be closed in favor of the consolidated or expanded
-        User Story issues, as appropriate. Do not delete them, mark as merge or split and closed.
+        Merge-to and Split-to User Story issue(s) should be **Closed as Not Planned** in favor of the
+        consolidated or expanded User Story issue(s), as appropriate. Do not delete, mark as merge
+        or split and **Closed as Not Planned**.
 
   - type: textarea
     id: linking

@@ -29,10 +29,10 @@ body:
         # Agile Epic
         
         An Epic is a collection of related Features which combine to form a
-        level of functionality within a larger project unit, here called a Theme
-        (also called an Initiative by some).
+        level of functionality within an Initiative **Theme**. One or more Epics will
+        form the base for an Agile Iteration. 
 
-        We can express an Epic directly as an Objective and Key Results (OKRs).
+        We can describe an Epic directly as an **Objective** and **Key Results** (OKRs).
 
   - type: markdown
     attributes:
@@ -83,10 +83,11 @@ body:
         - split-to: -> an Epic that is one of multiple Themes derived from this Epic
         - split-from: -> an Epic that was split into this and other Epics
         - spike-to: -> a virtual Epic for planning and estimation of related Epics
-        - spoke-from: --> a real Epic connected to a virtual spike Epic
+        - spike-from: --> a real Epic connected to a virtual spike Epic
 
-        Merge-to and Split-to Epic issues should be closed in favor of the consolidated or expanded
-        Epic issues, as appropriate. Do not delete them, mark as merge or split and closed.
+        Merge-to and Split-to Epic issue(s) should be **Closed as Not Planned** in favor of the
+        consolidated or expanded Epic issue(s), as appropriate. Do not delete, mark as merge
+        or split and **Closed as Not Planned**.
 
   - type: textarea
     id: linking
