@@ -70,8 +70,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Issues should be linked by url (see info for issue linking bottom of page) for a
-        variety of reasons, with tags in a task list indicating the link relationship.
+        Issues should be linked by url (see info for issue linking bottom of page) to indicate
+        graph relationship between them, with tags in a task list indicating the link relationship.
         Identifying relationships between issues within the initiative hierarchy should
         be easier than without this information.
 
@@ -92,7 +92,7 @@ body:
     id: linking
     attributes:
       label: Issues linked within the Project Overview Repository to this Theme issue
-      description: "Tag entries with epic: , feature:, story:, merge-to:, split-from:, etc"
+      description: "Tag entries with theme: , epic: , merge-to:, split-from:, etc"
       placeholder: |
         - [ ] theme: issue link within overview
         - [ ] merge-to: this issue merges into a new issue
