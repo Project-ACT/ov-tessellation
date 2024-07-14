@@ -27,10 +27,14 @@ body:
     attributes:
       value: |
         # Agile Theme
+
+        A Theme is an over-arching description of a major phase of development of an Initiative,
+        made up of Epics which combine to reach the desired level of functionality.
         
-        A Theme describes the **Objective** of a component of an entire initiative,
-        defining the goals and **Key Results** of a phase of development, detailed further in
-        related Epics, Features, and User Stories.
+        One or more Epics will form the base for an Agile Iteration. 
+
+        We can describe a Theme directly as an **Objective** and **Key Results** (OKRs).
+
 
   - type: markdown
     attributes:

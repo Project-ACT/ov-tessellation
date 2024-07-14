@@ -29,8 +29,9 @@ body:
         # Agile Epic
         
         An Epic is a collection of related Features which combine to form a
-        level of functionality within an Initiative **Theme**. One or more Epics will
-        form the base for an Agile Iteration. 
+        level of functionality within an Initiative **Theme**.
+        
+        One or more Epics will form the base for an Agile Iteration. 
 
         We can describe an Epic directly as an **Objective** and **Key Results** (OKRs).
 

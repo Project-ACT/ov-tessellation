@@ -27,12 +27,13 @@ body:
     attributes:
       value: |
         # Agile Feature
-        
-        A **Feature** is a general, yet focused description of some aspect of the Initiative to be implemented
-        during an Epic, detailed at a more granular level as a collection of one or more related User Stories.
 
-        A Feature may also indicate an implementation requirement that can be further detailed with User Stories, 
-        for example an OpenAPI implementation, or some established API or Protocol, etc.
+        A **Feature** is a generalized behavior, experience, or expectation from a component of the Initiative.
+        
+        One or more User Stories will describe variations, subtleties, and specific considerations of a Feature,
+        including potentially-required use of specific standard protocols, file formats, interfaces, and so on.
+
+        We can describe a Feature directly as an **Objective** with measurable **Key Results** (OKRs).
 
   - type: markdown
     attributes:
