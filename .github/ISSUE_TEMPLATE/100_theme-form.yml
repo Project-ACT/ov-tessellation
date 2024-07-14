@@ -19,7 +19,8 @@ name: Theme
 description: Agile Theme for project design and planning, a top-level grouping of Epics
 title: "[Theme]: Edit title after colon"
 labels: ["theme", "triage"]
-projects: ["project-act/2"]
+projects:
+  - Project-ACT/2
 assignees:
   - DanHugoDanHugo
 body:

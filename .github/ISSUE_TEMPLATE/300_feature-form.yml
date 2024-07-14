@@ -19,7 +19,8 @@ name: Feature
 description: Agile Feature for project design and planning, a top-level grouping of User Stories
 title: "[Feature]: Edit title after colon"
 labels: ["feature", "triage"]
-projects: ["project-act/2"]
+projects:
+  - Project-ACT/2
 assignees:
   - DanHugoDanHugo
 body:
