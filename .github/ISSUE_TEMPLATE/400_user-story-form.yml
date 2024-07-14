@@ -18,7 +18,9 @@
 name: User Story
 description: Agile User story as a component of project design and planning
 title: "[User Story]: Edit title after colon"
-labels: ["story", "triage"]
+labels:
+  - story
+  - triage
 projects:
   - Project-ACT/2
 assignees:
