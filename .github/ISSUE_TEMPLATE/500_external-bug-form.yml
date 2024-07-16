@@ -135,6 +135,30 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: "## Bug Reporter Contact and Attribution"
+
+  - type: checkboxes
+    id: reporteropts
+    attributes:
+      label: Reporter Contact and Attribution
+      description: Select and update all that apply
+      options:
+        - label: Contact Information Available 
+        - label: Contact Information Redacted For Privacy
+        - label: Contact Reporter with Status Updates
+        - label: Attribution Information Available
+        - label: Attribute Contribution(s) to Reporter
+
+  - type: input
+    id: reportercontact
+    attributes:
+      label: Reporter Contact and Attribution
+      description: "Name, Email, etc as needed for opt-in follow-up and contribution attribution"
+      placeholder: "Example: John Doe<jdoe@example.com>"
+    validations:
+      required: false
 
   - type: markdown
     attributes:
