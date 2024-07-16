@@ -16,7 +16,7 @@
 # along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
 
 name: Theme
-description: Agile Theme for project design and planning, a top-level grouping of Epics
+description: Agile Theme for initiative design and planning, a top-level grouping of Epics
 title: "[Theme]: Edit title after colon"
 labels:
   - theme
@@ -47,8 +47,8 @@ body:
     id: objective
     attributes:
       label: The Objective of this Theme, We aim to…
-      description: Goals we hope to accomplish with this broadly-defined project element
-      placeholder: A brief overview of what we aim to accomplished with this project component
+      description: Goals we hope to accomplish with this broadly-defined initiative element
+      placeholder: A brief overview of what we aim to accomplished with this initiative component
     validations:
       required: true
 
@@ -96,7 +96,7 @@ body:
   - type: textarea
     id: linking
     attributes:
-      label: Issues linked within the Project Overview Repository to this Theme issue
+      label: Issues linked within the Initiative Overview Repository from or to this Theme issue
       description: "Tag entries with theme: , epic: , story: , merge-to: , split-from: , etc"
       placeholder: |
         - [ ] epic: issue link within overview
@@ -119,7 +119,7 @@ body:
         - Links to resources to aid in implementation of Epics attached to this Theme
         - to External API Specifications, Accessibility Standards
         - to Verification/Certification tools
-        - to Similar features in other projects/platforms
+        - to Similar features in other Component Projects/Platforms
 
     validations:
       required: true
@@ -134,7 +134,7 @@ body:
       label: Post-Theme comments, observations, notes
       description: To aid in iterative process improvement and learning
       placeholder: |
-        Anything that may contribute to ongoing success of this Theme or other parts of the project effort.
+        Anything that may contribute to ongoing success of this Theme or other parts of the Initiative effort.
 
     validations:
       required: false

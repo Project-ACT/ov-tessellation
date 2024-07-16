@@ -16,7 +16,7 @@
 # along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
 
 name: User Story
-description: Agile User story as a component of project design and planning
+description: Agile User story for initiative design and planning
 title: "[User Story]: Edit title after colon"
 labels:
   - story
@@ -41,11 +41,11 @@ body:
         Multiple tasks in multiple repositories may implement a User Story or Stories.
 
 # This displayed list of User types should match the dropdown list below
-# Edit to match Agile User types for this project       
+# Edit to match Agile User types for this initiative 
   - type: markdown
     attributes:
       value: |
-        User types *for this project*:
+        User types *for this initiative*:
         - **Organization Maintainer** responsible for a cohort of one or more people
         - **Organization Member** is anyone considered to be a part of an organization
         - **Project Maintainer** responsible for managing project(s)
@@ -150,7 +150,7 @@ body:
   - type: textarea
     id: linking
     attributes:
-      label: Issues linked within the Project Overview Repository to this Theme issue
+      label: Issues linked within the Initiative Overview Repository to this Theme issue
       description: "Tag entries with epic: , task: , story: , merge-to: , split-from: , etc"
       placeholder: |
         - [ ] epic: issue link within overview
@@ -173,7 +173,7 @@ body:
         - Links to resources to aid in implementation of this User Story
         - to External API Specifications, Accessibility Standards
         - to Verification/Certification tools
-        - to Similar features in other projects/platforms
+        - to Similar features in other Component Projects/Platforms
 
     validations:
       required: false
@@ -201,7 +201,7 @@ body:
       label: Post-Story comments, observations, notes
       description: To aid in iterative process improvement and learning
       placeholder: |
-        Anything that may contribute to other User Stories and other project effort.
+        Anything that may contribute to other User Stories and other Initiative effort.
 
     validations:
       required: false
