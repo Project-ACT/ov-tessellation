@@ -80,13 +80,13 @@ body:
         be easier than without this information.
 
         Tags and Linked Issues
-        - epic: -> a parent Epic in this Agile hierarchy for this Feature
-        - story: -> a child User Story in this Agile Hierarchy for this Feature
-        - merge-to: -> a Feature that is a merging of this and other Feature(s)
-        - merge-from: -> a Feature that was merged into this Features
-        - split-to: -> a Feature that is one of multiple Themes derived from this Features
-        - split-from: -> a Feature that was split into this and other Features
-        - spike-to: -> a virtual Feature for planning and estimation of related Features
+        - epic: --> a parent Epic in this Agile hierarchy for this Feature
+        - story: --> a child User Story in this Agile Hierarchy for this Feature
+        - merge-to: --> a Feature that is a merging of this and other Feature(s)
+        - merge-from: --> a Feature that was merged into this Features
+        - split-to: --> a Feature that is one of multiple Features derived from this Feature
+        - split-from: --> a Feature that was split into this and other Features
+        - spike-to: --> a virtual Feature for planning and estimation of related Features
         - spike-from: --> a real Theme connected to a virtual spike Theme
 
         Merge-to and Split-to Feature issue(s) should be **Closed as Not Planned** in favor of the

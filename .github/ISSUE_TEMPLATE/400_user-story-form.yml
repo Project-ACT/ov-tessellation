@@ -134,13 +134,13 @@ body:
         be easier than without this information.
 
         Tags and Linked Issues
-        - feature: -> the parent Feature in this Agile hierarchy for this User Story
+        - feature: --> the parent Feature in this Agile hierarchy for this User Story
         - task: --> Implementation Task located in a separate repository
-        - merge-to: -> a User Story that is a merging of this and other User Stories
-        - merge-from: -> a User Story that was merged into this User Story
-        - split-to: -> a User Story that is one of multiple Themes derived from this User Stories
-        - split-from: -> a User Story that was split into this and other User Stories
-        - spike-to: -> a virtual User Story for planning and estimation of related User Stories
+        - merge-to: --> a User Story that is a merging of this and other User Stories
+        - merge-from: --> a User Story that was merged into this User Story
+        - split-to: --> a User Story that is one of multiple User Stories derived from this User Story
+        - split-from: --> a User Story that was split into this and other User Stories
+        - spike-to: --> a virtual User Story for planning and estimation of related User Stories
         - spike-from: --> a real User Story connected to a virtual spike User Story
 
         Merge-to and Split-to User Story issue(s) should be **Closed as Not Planned** in favor of the

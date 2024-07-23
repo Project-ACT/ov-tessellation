@@ -80,13 +80,13 @@ body:
         be easier than without this information.
 
         Tags and Linked Issues
-        - theme: -> the parent Theme in this Agile hierarchy for this Epic
-        - feature: -> a child Feature in this Agile hierarchy for this Epic
-        - merge-to: -> an Epic that is a merging of this and other Epic(s)
-        - merge-from: -> an Epic that was merged into this Epic
-        - split-to: -> an Epic that is one of multiple Themes derived from this Epic
-        - split-from: -> an Epic that was split into this and other Epics
-        - spike-to: -> a virtual Epic for planning and estimation of related Epics
+        - theme: --> the parent Theme in this Agile hierarchy for this Epic
+        - feature: --> a child Feature in this Agile hierarchy for this Epic
+        - merge-to: --> an Epic that is a merging of this and other Epic(s)
+        - merge-from: --> an Epic that was merged into this Epic
+        - split-to: --> an Epic that is one of multiple Epics derived from this Epic
+        - split-from: --> an Epic that was split into this and other Epics
+        - spike-to: --> a virtual Epic for planning and estimation of related Epics
         - spike-from: --> a real Epic connected to a virtual spike Epic
 
         Merge-to and Split-to Epic issue(s) should be **Closed as Not Planned** in favor of the
