@@ -1,0 +1,69 @@
+# Copyright (C) 2024 Project-ACT
+# 
+# This file is part of ov-tessellation.
+# 
+# ov-tessellation is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# ov-tessellation is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
+
+title: "[Feature Request]: Edit title after colon"
+labels:
+  - feature
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Agile Feature Request
+
+        Our Agile Feature describes a reasonably specific operation, action, input, output, user
+        interface interaction, or general user (or automation) experience associated with an
+        Initiative Theme.
+
+        If the Initiative is an Office Suite and the Theme is a Spreadsheet component, an example
+        *Feature* might be autofill formulae or adjustable column and row sizes, etc.
+  
+  - type: markdown
+    attributes:
+      value: "## Objective"
+
+  - type: input
+    id: name
+    attributes:
+      label: Name your Feature Idea
+      description: "Examples: Adjustable Columns and Rows, Sheet Reordering, Formula Drop-down, etc"
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: What should your Feature Idea do?
+      description: "A general description of the Feature you have named above"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Key Results"
+
+  - type: textarea
+    id: keyresults
+    attributes:
+      label: At Least Three elements of your Feature Idea you would check
+      description: "How we know we are on the right track pursuing your Feature Idea"
+      placeholder: |
+        - A list of one or more measurable
+        - and demonstrably-achieved results
+        - Checked through the initiative timeline
+    validations:
+      required: true

@@ -1,0 +1,100 @@
+# Copyright (C) 2024 Project-ACT
+# 
+# This file is part of ov-tessellation.
+# 
+# ov-tessellation is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# ov-tessellation is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
+
+title: "[External Bug]: Edit title after colon"
+labels:
+  - extbug
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # External Bug
+
+        Please use this Discussion Category to describe an issue, problem, or defect
+        you have encountered using one or more components of this Initiative.
+
+        One Initiative is composed of several component projects and other moving parts,
+        there is no reason you should need to dive in to the inner workings to report
+        some finding… you are using GitHub, though, which means you are a bit closer to
+        the structure and inner workings than most.
+
+        Please take a moment to fill this in, your GitHub credentials will be used to
+        attribute your contribution to this initiative unless you would rather opt out.
+
+  - type: markdown
+    attributes:
+      value: "## Me as User"
+
+  - type: markdown
+    attributes:
+      value: |
+        User types:
+        - **Organization Maintainer** responsible for a cohort of one or more people
+        - **Organization Member** is anyone considered to be a part of an organization
+        - **Project Maintainer** responsible for managing project(s)
+        - **Project Contributor** a person who is part of an organization contributing to project(s)
+        - **External Contributor** a person discovering projects
+        - **Casual User** a curious person checking stuff out
+        - **Automated User** a spider or other bot or similar
+        - **Catalog Maintainer** oversees the gathered data from remote orgs and projects
+        - **Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects
+        - **Visualization Maintainer** integrates graph visualizations into other platform(s)
+        - **Notification Maintainer** manages integration of notifications with messaging tools and channels
+        - **Tessellation Contributor** works on Tessellation components in any capacity
+
+  - type: dropdown
+    id: user
+    attributes:
+      label: I am a…
+      description: So we can consider some implementation specifics.
+# Options in this dropdown list should match the display list of User types above
+      options:
+        - Organization Maintainer
+        - Organization Member
+        - Project Maintainer
+        - Project Contributor
+        - External Contributor
+        - Casual User
+        - Automated User
+        - Catalog Maintainer
+        - Spider Maintainer
+        - Visualization Maintainer
+        - Notification Maintainer
+        - Tessellation Contributor
+      default: 0
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Detail"
+
+  - type: markdown
+    attributes:
+      value: "## Short Description"
+        
+  - type: textarea
+    id: shortdesc
+    attributes:
+      label: Brief Summary Description of the Reported Bug
+      description: Augments the issue title with an extended description
+
+    validations:
+      required: true
+
+
