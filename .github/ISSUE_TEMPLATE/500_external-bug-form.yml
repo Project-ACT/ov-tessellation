@@ -107,12 +107,15 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Short Description"
+      value: |
+        ## Short Description
+  
+        Brief Summary Description of the Reported Bug
         
   - type: textarea
     id: shortdesc
     attributes:
-      label: Brief Summary Description of the Reported Bug
+      label: Short Description
       description: Augments the issue title with an extended description
 
     validations:
@@ -120,7 +123,12 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Full Description (Report Body)"
+      value: |
+        ## Full Description (Report Body)
+
+        Actual Bug Report as submitted, as complete as possible, including a link
+        or other reference to the original report (if submitted via a public-facing
+        bug-report tool, etc)
 
   - type: textarea
     id: description
@@ -128,9 +136,7 @@ body:
       label: Full Description of the Reported Bug as Received
       description: Augments the issue title with an extended description
       placeholder: |
-        Actual Bug Report as submitted, as complete as possible, including a link
-        or other reference to the original report (if submitted via a public-facing
-        bug-report tool, etc)
+        Original email, external bug form submission, etc.
 
     validations:
       required: true
@@ -142,7 +148,7 @@ body:
   - type: checkboxes
     id: reporteropts
     attributes:
-      label: Reporter Contact and Attribution
+      label: Reporter Attribution
       description: Select and update all that apply
       options:
         - label: Contact Information Available 
@@ -154,7 +160,7 @@ body:
   - type: input
     id: reportercontact
     attributes:
-      label: Reporter Contact and Attribution
+      label: Reporter Contact
       description: "Name, Email, etc as needed for opt-in follow-up and contribution attribution"
       placeholder: "Example: John Doe<jdoe@example.com>"
     validations:
@@ -162,7 +168,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Intra-Overview and Implementation Repository Linked Issue(s)"
+      value: "# Linked Issues"
 
   - type: markdown
     attributes:
@@ -184,7 +190,7 @@ body:
   - type: textarea
     id: linking
     attributes:
-      label: Issues linked within the Initiative Overview Repo and/or to Component Project Repos
+      label: Linked Issues
       description: "Tag entries with defect: , feature: , or story: "
       placeholder: |
         - [ ] defect: issue link to a related component project repo
@@ -196,12 +202,15 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Wrap-Up"
+      value: |
+        # Wrap-Up
+
+        Post-Bug-Triage comments, observations, notes
 
   - type: textarea
     id: wrapup
     attributes:
-      label: Post-Bug-Triage comments, observations, notes
+      label: Wrap-Up
       description: To aid in iterative process improvement and learning
       placeholder: |
         Anything that may contribute to handling of other External Bug reports.

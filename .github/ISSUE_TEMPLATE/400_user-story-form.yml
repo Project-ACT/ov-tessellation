@@ -93,7 +93,12 @@ body:
   
   - type: markdown
     attributes:
-      value: "# Conversation"
+      value: |
+        # Conversation
+
+        Typically this is literally a conversation regarding what a particular User
+        might want, need, or expect from a particular Feature, which this User Story
+        is describing.
 
   - type: textarea
     id: conversation
@@ -106,7 +111,12 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Confirmation"
+      value: |
+        # Confirmation
+
+        When a Feature becomes available for a User, a particular User Type may determine that
+        the implementation is sufficient, close, or maybe not. Here we spell out specifics that
+        this User Type might have examine to make that determination.
 
   - type: textarea
     id: confirmation
@@ -123,11 +133,13 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Intra-Overview and Implementation Repository Linked Issue(s)"
+      value: "# Linked Issues"
 
   - type: markdown
     attributes:
       value: |
+        Intra-Overview and Implementation Project Repository Linked Issue(s)"
+
         Issues should be linked by url (see info for issue linking bottom of page) to indicate
         graph relationship between them, with tags in a task list indicating the link relationship.
         Identifying relationships between issues within the initiative hierarchy should
@@ -137,11 +149,11 @@ body:
         - feature: --> the parent Feature in this Agile hierarchy for this User Story
         - task: --> Implementation Task located in a separate repository
         - merge-to: --> a User Story that is a merging of this and other User Stories
-        - merge-from: --> a User Story that was merged into this User Story
+        - merge-from: <-- a User Story that was merged into this User Story
         - split-to: --> a User Story that is one of multiple User Stories derived from this User Story
-        - split-from: --> a User Story that was split into this and other User Stories
+        - split-from: <-- a User Story that was split into this and other User Stories
         - spike-to: --> a virtual User Story for planning and estimation of related User Stories
-        - spike-from: --> a real User Story connected to a virtual spike User Story
+        - spike-from: <-- a real User Story connected to a virtual spike User Story
 
         Merge-to and Split-to User Story issue(s) should be **Closed as Not Planned** in favor of the
         consolidated or expanded User Story issue(s), as appropriate. Do not delete, mark as merge
@@ -150,7 +162,7 @@ body:
   - type: textarea
     id: linking
     attributes:
-      label: Issues linked within the Initiative Overview Repository to this Theme issue
+      label: Linked Issues
       description: "Tag entries with epic: , task: , story: , merge-to: , split-from: , etc"
       placeholder: |
         - [ ] epic: issue link within overview
@@ -162,12 +174,15 @@ body:
 
   - type: markdown
     attributes:
-      value: "# References"
+      value: |
+        # References
+
+        Links to external specs, documents, RFCs, accepted standards, examples, etc
         
   - type: textarea
     id: references
     attributes:
-      label: Links to external specs, documents, RFCs, accepted standards, examples, etc
+      label: References
       description: Place useful information close for implementors to find…
       placeholder: |
         - Links to resources to aid in implementation of this User Story
@@ -180,12 +195,15 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Notes"
+      value: |
+        # Notes
+
+        Non-story knowledge and insight
 
   - type: textarea
     id: notes
     attributes:
-      label: Non-story knowledge and insight
+      label: Notes
       description: Optional meta detail
       placeholder: Useful information for planning and implementation, etc.
     validations:
@@ -193,12 +211,15 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Wrap-Up"
+      value: |
+        # Wrap-Up
+
+        Post-Story comments, observations, notes.
 
   - type: textarea
     id: wrapup
     attributes:
-      label: Post-Story comments, observations, notes
+      label: Wrap-Up
       description: To aid in iterative process improvement and learning
       placeholder: |
         Anything that may contribute to other User Stories and other Initiative effort.
