@@ -99,9 +99,9 @@ body:
       label: Linked Issues
       description: "Tag entries with theme: , epic: , merge-to:, split-from:, etc"
       placeholder: |
-        - [ ] theme: issue link within overview
-        - [ ] merge-to: this issue merges into a new issue
-        - [ ] split-from: this issue is one refactor from a parent Epic issue
+        - theme: issue link within overview
+        - merge-to: this issue merges into a new issue
+        - split-from: this issue is one refactor from a parent Epic issue
 
     validations:
       required: false

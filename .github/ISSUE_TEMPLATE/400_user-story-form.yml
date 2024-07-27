@@ -165,9 +165,9 @@ body:
       label: Linked Issues
       description: "Tag entries with epic: , task: , story: , merge-to: , split-from: , etc"
       placeholder: |
-        - [ ] epic: issue link within overview
-        - [ ] merge-to: this issue merges into a new issue
-        - [ ] split-from: this issue is one refactor from a parent Theme issue
+        - epic: issue link within overview
+        - merge-to: this issue merges into a new issue
+        - split-from: this issue is one refactor from a parent Theme issue
 
     validations:
       required: false
