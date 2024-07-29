@@ -62,9 +62,9 @@ body:
       label: Key Results
       description: A list of Key Results indicating success
       placeholder: |
-        - [ ] A list of one or more measurable
-        - [ ] and demonstrably-achieved results
-        - [ ] Check off during Wrap-Up
+        - A list of one or more measurable
+        - and demonstrably-achieved results
+        - Check off items in implementation(s)
     validations:
       required: true
 
@@ -90,8 +90,9 @@ body:
         - spike-from: <-- a real Theme connected to a virtual spike Theme
 
         Merge-to and Split-to Theme issue(s) should be **Closed as Not Planned** in favor of the
-        consolidated or expanded Theme issue(s), as appropriate. Do not delete, mark as merge
-        or split and **Closed as Not Planned**.
+        consolidated or expanded Theme issue(s), as appropriate.
+        
+        Do not delete, mark as merge or split and **Closed as Not Planned**.
 
   - type: textarea
     id: linking

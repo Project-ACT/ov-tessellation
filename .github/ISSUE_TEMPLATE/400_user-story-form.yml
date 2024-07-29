@@ -35,29 +35,10 @@ body:
         2. Describe in Conversation what this User would like to accomplish, with context, addressing concerns such as What and Why.
         3. Describe in simple list form (not checkboxes) Confirmation that we met those expectations as Acceptance Criteria.
 
-        A user story is a description of what to do in somewhat abstract form, a task (issue) in a *related repository* will describe
+        A User Story is a description of what to do in somewhat abstract form, a Story Task (issue) in a *related repository* will describe
         implementation of a particular User Story including Confirmation checks, which are essentially concrete **Key Results**.
         
         Multiple tasks in multiple repositories may implement a User Story or Stories.
-
-# This displayed list of User types should match the dropdown list below
-# Edit to match Agile User types for this initiative 
-  - type: markdown
-    attributes:
-      value: |
-        User types *for this initiative*:
-        - **Organization Maintainer** responsible for a cohort of one or more people
-        - **Organization Member** is anyone considered to be a part of an organization
-        - **Project Maintainer** responsible for managing project(s)
-        - **Project Contributor** a person who is part of an organization contributing to project(s)
-        - **External Contributor** a person discovering projects
-        - **Casual User** a curious person checking stuff out
-        - **Automated User** a spider or other bot or similar
-        - **Catalog Maintainer** oversees the gathered data from remote orgs and projects
-        - **Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects
-        - **Visualization Maintainer** integrates graph visualizations into other platform(s)
-        - **Notification Maintainer** manages integration of notifications with messaging tools and channels
-        - **Tessellation Contributor** works on Tessellation components in any capacity
 
   - type: markdown
     attributes:
@@ -68,28 +49,31 @@ body:
     attributes:
       value: "# Card"
 
-  - type: dropdown
-    id: card
+  - type: markdown
     attributes:
-      label: As a …
-      description: Who are we listening to?
-# Options in this dropdown list should match the display list of User types above
+      value: |
+        A particular Feature may have some nuanced requirements or expectations based on the type of User, their role, etc.
+
+        Select any or all which apply to these particular facets of a Feature description, but keep in mind that there
+        is usually a difference that could be missed if we assume everyone will need or want the same things…
+
+  - type: checkboxes
+    attributes:
+      label: As a…
+      description: For whom are we making, be deliberate when choosing more than one.
       options:
-        - Organization Maintainer
-        - Organization Member
-        - Project Maintainer
-        - Project Contributor
-        - External Contributor
-        - Casual User
-        - Automated User
-        - Catalog Maintainer
-        - Spider Maintainer
-        - Visualization Maintainer
-        - Notification Maintainer
-        - Tessellation Contributor
-      default: 0
-    validations:
-      required: true
+        - label: "**Organization Maintainer** responsible for a cohort of one or more people"
+        - label: "**Organization Member** is anyone considered to be a part of an organization"
+        - label: "**Project Maintainer** responsible for managing project(s)"
+        - label: "**Project Contributor** a person who is part of an organization contributing to project(s)"
+        - label: "**External Contributor** a person discovering projects"
+        - label: "**Casual User** a curious person checking stuff out"
+        - label: "**Automated User** a spider or other bot or similar"
+        - label: "**Catalog Maintainer** oversees the gathered data from remote orgs and projects"
+        - label: "**Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects"
+        - label: "**Visualization Maintainer** integrates graph visualizations into other platform(s)"
+        - label: "**Notification Maintainer** manages integration of notifications with messaging tools and channels"
+        - label: "**Tessellation Contributor** works on Tessellation components in any capacity"
   
   - type: markdown
     attributes:
@@ -156,8 +140,9 @@ body:
         - spike-from: <-- a real User Story connected to a virtual spike User Story
 
         Merge-to and Split-to User Story issue(s) should be **Closed as Not Planned** in favor of the
-        consolidated or expanded User Story issue(s), as appropriate. Do not delete, mark as merge
-        or split and **Closed as Not Planned**.
+        consolidated or expanded User Story issue(s), as appropriate.
+        
+        Do not delete, mark as merge or split and **Closed as Not Planned**.
 
   - type: textarea
     id: linking

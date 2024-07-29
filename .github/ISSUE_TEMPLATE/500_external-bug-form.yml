@@ -46,65 +46,7 @@ body:
         status of their reported findings as they are addressed, and there is a case
         to be made for inclusion of filers of such reports as contributors to
         all or part of the Initiative (at their opt-in of course).
-
-
-
-# This displayed list of User types should match the dropdown list below
-# Edit to match Agile User types for this initiative
-  - type: markdown
-    attributes:
-      value: |
-        User types *for this initiative*:
-        - **Organization Maintainer** responsible for a cohort of one or more people
-        - **Organization Member** is anyone considered to be a part of an organization
-        - **Project Maintainer** responsible for managing project(s)
-        - **Project Contributor** a person who is part of an organization contributing to project(s)
-        - **External Contributor** a person discovering projects
-        - **Casual User** a curious person checking stuff out
-        - **Automated User** a spider or other bot or similar
-        - **Catalog Maintainer** oversees the gathered data from remote orgs and projects
-        - **Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects
-        - **Visualization Maintainer** integrates graph visualizations into other platform(s)
-        - **Notification Maintainer** manages integration of notifications with messaging tools and channels
-        - **Tessellation Contributor** works on Tessellation components in any capacity
-
-  - type: markdown
-    attributes:
-      value: |
-        **Please compose Conversation and Confirmation elements in the first person, as though you are the selected User.**
       
-  - type: markdown
-    attributes:
-      value: "# Submitter/Reporter as User Type"
-
-  - type: dropdown
-    id: card
-    attributes:
-      label: As a …
-      description: Who are we getting a report from?
-# Options in this dropdown list should match the display list of User types above
-      options:
-        - Unknown
-        - Organization Maintainer
-        - Organization Member
-        - Project Maintainer
-        - Project Contributor
-        - External Contributor
-        - Casual User
-        - Automated User
-        - Catalog Maintainer
-        - Spider Maintainer
-        - Visualization Maintainer
-        - Notification Maintainer
-        - Tessellation Contributor
-      default: 0
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: "# Detail"
-
   - type: markdown
     attributes:
       value: |
@@ -120,6 +62,30 @@ body:
 
     validations:
       required: true
+
+
+  - type: markdown
+    attributes:
+      value: "## Submitter/Reporter as User Type"
+
+  - type: checkboxes
+    attributes:
+      label: As a…
+      description: For whom are we making, be deliberate when choosing more than one.
+      options:
+        - label: "**Unknown** user type, probably not provided"
+        - label: "**Organization Maintainer** responsible for a cohort of one or more people"
+        - label: "**Organization Member** is anyone considered to be a part of an organization"
+        - label: "**Project Maintainer** responsible for managing project(s)"
+        - label: "**Project Contributor** a person who is part of an organization contributing to project(s)"
+        - label: "**External Contributor** a person discovering projects"
+        - label: "**Casual User** a curious person checking stuff out"
+        - label: "**Automated User** a spider or other bot or similar"
+        - label: "**Catalog Maintainer** oversees the gathered data from remote orgs and projects"
+        - label: "**Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects"
+        - label: "**Visualization Maintainer** integrates graph visualizations into other platform(s)"
+        - label: "**Notification Maintainer** manages integration of notifications with messaging tools and channels"
+        - label: "**Tessellation Contributor** works on Tessellation components in any capacity"
 
   - type: markdown
     attributes:
