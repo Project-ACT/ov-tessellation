@@ -38,61 +38,55 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Me as User"
-
-  - type: markdown
-    attributes:
-      value: |
-        User types:
-        - **Organization Maintainer** responsible for a cohort of one or more people
-        - **Organization Member** is anyone considered to be a part of an organization
-        - **Project Maintainer** responsible for managing project(s)
-        - **Project Contributor** a person who is part of an organization contributing to project(s)
-        - **External Contributor** a person discovering projects
-        - **Casual User** a curious person checking stuff out
-        - **Automated User** a spider or other bot or similar
-        - **Catalog Maintainer** oversees the gathered data from remote orgs and projects
-        - **Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects
-        - **Visualization Maintainer** integrates graph visualizations into other platform(s)
-        - **Notification Maintainer** manages integration of notifications with messaging tools and channels
-        - **Tessellation Contributor** works on Tessellation components in any capacity
-
-  - type: dropdown
-    id: user
-    attributes:
-      label: I am a…
-      description: So we can consider some implementation specifics.
-# Options in this dropdown list should match the display list of User types above
-      options:
-        - Organization Maintainer
-        - Organization Member
-        - Project Maintainer
-        - Project Contributor
-        - External Contributor
-        - Casual User
-        - Automated User
-        - Catalog Maintainer
-        - Spider Maintainer
-        - Visualization Maintainer
-        - Notification Maintainer
-        - Tessellation Contributor
-      default: 0
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: "# Detail"
-
-  - type: markdown
-    attributes:
       value: "## Short Description"
         
   - type: textarea
     id: shortdesc
     attributes:
-      label: Brief Summary Description of the Reported Bug
+      label: Brief Summary Description of the Bug
       description: Augments the issue title with an extended description
+
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Me as User"
+
+  - type: checkboxes
+    attributes:
+      label: I am a…
+      description: So we can consider some implementation specifics.
+      options:
+        - label: "**Organization Maintainer** responsible for a cohort of one or more people"
+        - label: "**Organization Member** is anyone considered to be a part of an organization"
+        - label: "**Project Maintainer** responsible for managing project(s)"
+        - label: "**Project Contributor** a person who is part of an organization contributing to project(s)"
+        - label: "**External Contributor** a person discovering projects"
+        - label: "**Casual User** a curious person checking stuff out"
+        - label: "**Automated User** a spider or other bot or similar"
+        - label: "**Catalog Maintainer** oversees the gathered data from remote orgs and projects"
+        - label: "**Spider Maintainer** oversees operation of the automation of gathering data from orgs and projects"
+        - label: "**Visualization Maintainer** integrates graph visualizations into other platform(s)"
+        - label: "**Notification Maintainer** manages integration of notifications with messaging tools and channels"
+        - label: "**Tessellation Contributor** works on Tessellation components in any capacity"
+
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Full Description
+
+        As complete as possible, including what happened, what was expected to happen,
+
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Full Bug Description
+      description: Relevant configurations, inputs, outputs, what went wrong?
+      placeholder: |
+        Logs, screenshots, software, hardware, device details, versions, etc.
 
     validations:
       required: true
