@@ -46,23 +46,19 @@ body:
         status of their reported findings as they are addressed, and there is a case
         to be made for inclusion of filers of such reports as contributors to
         all or part of the Initiative (at their opt-in of course).
-      
+
   - type: markdown
     attributes:
-      value: |
-        ## Short Description
-  
-        Brief Summary Description of the Reported Bug
+      value: "## Short Description"
         
   - type: textarea
     id: shortdesc
     attributes:
-      label: Short Description
+      label: Brief Description
       description: Augments the issue title with an extended description
 
     validations:
       required: true
-
 
   - type: markdown
     attributes:
@@ -89,20 +85,17 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-        ## Full Description (Report Body)
-
-        Actual Bug Report as submitted, as complete as possible, including a link
-        or other reference to the original report (if submitted via a public-facing
-        bug-report tool, etc)
+      value: "## Full Description (Report Body)"
 
   - type: textarea
     id: description
     attributes:
-      label: Full Description of the Reported Bug as Received
-      description: Augments the issue title with an extended description
+      label: Full Description
+      description: Information as reported in full
       placeholder: |
-        Original email, external bug form submission, etc.
+        Actual Bug Report as submitted, as complete as possible, including a link
+        or other reference to the original report (if submitted via a public-facing
+        bug-report tool, etc)
 
     validations:
       required: true
@@ -134,7 +127,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Linked Issues"
+      value: "## Issue Linking"
 
   - type: markdown
     attributes:
@@ -169,14 +162,33 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Wrap-Up
+        ## Issue Graph
 
-        Post-Bug-Triage comments, observations, notes
+        A visualization of Linked Issues as indicated above, updated programmatically, please leave as is.
+
+        As issues are linked or removed, the visualization can be updated via automation.
+
+  - type: textarea
+    id: issuegraph
+    attributes:
+      label: Issue Graph
+      description: Do not edit, will update via automation
+      value: |
+        classDiagram
+          direction TB
+          class Ext Bug {
+            Coming : Soon
+          }
+      render: mermaid
+
+  - type: markdown
+    attributes:
+      value: "## Wrap-Up"
 
   - type: textarea
     id: wrapup
     attributes:
-      label: Wrap-Up
+      label: Wrap-up
       description: To aid in iterative process improvement and learning
       placeholder: |
         Anything that may contribute to handling of other External Bug reports.

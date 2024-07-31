@@ -41,20 +41,20 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Theme Objective"
+      value: "## Theme Objective"
         
   - type: textarea
     id: objective
     attributes:
       label: Objective
-      description: We Aim To… Goals we hope to accomplish with this broadly-defined initiative element
+      description: Goals we hope to accomplish with this broadly-defined initiative element
       placeholder: A brief overview of what we aim to accomplished with this initiative component
     validations:
       required: true
 
   - type: markdown
     attributes:
-      value: "# Key Results"
+      value: "## Key Results"
         
   - type: textarea
     id: keyresults
@@ -70,7 +70,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Intra-Overview Linked Issue(s)"
+      value: "## Issue Linking"
 
   - type: markdown
     attributes:
@@ -110,9 +110,28 @@ body:
   - type: markdown
     attributes:
       value: |
-        # References
+        ## Issue Graph
 
-        Links to external specs, documents, RFCs, accepted standards, examples, etc"
+        A visualization of Linked Issues as indicated above, updated programmatically, please leave as is.
+
+        As issues are linked or removed, the visualization can be updated via automation.
+
+  - type: textarea
+    id: issuegraph
+    attributes:
+      label: Issue Graph
+      description: Do not edit, will update via automation
+      value: |
+        classDiagram
+          direction TB
+          class Theme {
+            Coming : Soon
+          }
+      render: mermaid
+
+  - type: markdown
+    attributes:
+      value: "## References"
         
   - type: textarea
     id: references
@@ -126,19 +145,16 @@ body:
         - to Similar features in other Component Projects/Platforms
 
     validations:
-      required: false
+      required: true
 
   - type: markdown
     attributes:
-      value: |
-        # Wrap-Up
-
-        Post-Theme comments, observations, notes
+      value: "## Wrap-Up"
 
   - type: textarea
     id: wrapup
     attributes:
-      label: Wrap-Up
+      label: Wrap-up
       description: To aid in iterative process improvement and learning
       placeholder: |
         Anything that may contribute to ongoing success of this Theme or other parts of the Initiative effort.

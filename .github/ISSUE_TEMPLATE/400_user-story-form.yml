@@ -35,19 +35,17 @@ body:
         2. Describe in Conversation what this User would like to accomplish, with context, addressing concerns such as What and Why.
         3. Describe in simple list form (not checkboxes) Confirmation that we met those expectations as Acceptance Criteria.
 
-        A User Story is a description of what to do in somewhat abstract form, a Story Task (issue) in a *related repository* will describe
+        A user story is a description of what to do in somewhat abstract form, a task (issue) in a *related repository* will describe
         implementation of a particular User Story including Confirmation checks, which are essentially concrete **Key Results**.
         
         Multiple tasks in multiple repositories may implement a User Story or Stories.
 
-  - type: markdown
-    attributes:
-      value: |
         **Please compose Conversation and Confirmation elements in the first person, as though you are the selected User.**
+
       
   - type: markdown
     attributes:
-      value: "# Card"
+      value: "## Card"
 
   - type: markdown
     attributes:
@@ -56,6 +54,7 @@ body:
 
         Select any or all which apply to these particular facets of a Feature description, but keep in mind that there
         is usually a difference that could be missed if we assume everyone will need or want the same things…
+
 
   - type: checkboxes
     attributes:
@@ -74,15 +73,10 @@ body:
         - label: "**Visualization Maintainer** integrates graph visualizations into other platform(s)"
         - label: "**Notification Maintainer** manages integration of notifications with messaging tools and channels"
         - label: "**Tessellation Contributor** works on Tessellation components in any capacity"
-  
+ 
   - type: markdown
     attributes:
-      value: |
-        # Conversation
-
-        Typically this is literally a conversation regarding what a particular User
-        might want, need, or expect from a particular Feature, which this User Story
-        is describing.
+      value: "## Conversation"
 
   - type: textarea
     id: conversation
@@ -95,12 +89,7 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-        # Confirmation
-
-        When a Feature becomes available for a User, a particular User Type may determine that
-        the implementation is sufficient, close, or maybe not. Here we spell out specifics that
-        this User Type might have examine to make that determination.
+      value: "## Confirmation"
 
   - type: textarea
     id: confirmation
@@ -117,13 +106,11 @@ body:
 
   - type: markdown
     attributes:
-      value: "# Linked Issues"
+      value: "## Issue Linking"
 
   - type: markdown
     attributes:
       value: |
-        Intra-Overview and Implementation Project Repository Linked Issue(s)"
-
         Issues should be linked by url (see info for issue linking bottom of page) to indicate
         graph relationship between them, with tags in a task list indicating the link relationship.
         Identifying relationships between issues within the initiative hierarchy should
@@ -134,7 +121,7 @@ body:
         - task: --> Implementation Task located in a separate repository
         - merge-to: --> a User Story that is a merging of this and other User Stories
         - merge-from: <-- a User Story that was merged into this User Story
-        - split-to: --> a User Story that is one of multiple User Stories derived from this User Story
+        - split-to: --> a User Story that is one of multiple User Stories derived from this User Stories
         - split-from: <-- a User Story that was split into this and other User Stories
         - spike-to: --> a virtual User Story for planning and estimation of related User Stories
         - spike-from: <-- a real User Story connected to a virtual spike User Story
@@ -160,9 +147,28 @@ body:
   - type: markdown
     attributes:
       value: |
-        # References
+        ## Issue Graph
 
-        Links to external specs, documents, RFCs, accepted standards, examples, etc
+        A visualization of Linked Issues as indicated above, updated programmatically, please leave as is.
+
+        As issues are linked or removed, the visualization can be updated via automation.
+
+  - type: textarea
+    id: issuegraph
+    attributes:
+      label: Issue Graph
+      description: Do not edit, will update via automation
+      value: |
+        classDiagram
+          direction TB
+          class Story {
+            Coming : Soon
+          }
+      render: mermaid
+
+  - type: markdown
+    attributes:
+      value: "## References"
         
   - type: textarea
     id: references
@@ -180,31 +186,25 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-        # Notes
-
-        Non-story knowledge and insight
+      value: "## Notes"
 
   - type: textarea
     id: notes
     attributes:
       label: Notes
-      description: Optional meta detail
+      description: Non-story knowledge and insight
       placeholder: Useful information for planning and implementation, etc.
     validations:
       required: false
 
   - type: markdown
     attributes:
-      value: |
-        # Wrap-Up
-
-        Post-Story comments, observations, notes.
+      value: "## Wrap-Up"
 
   - type: textarea
     id: wrapup
     attributes:
-      label: Wrap-Up
+      label: Wrap-up
       description: To aid in iterative process improvement and learning
       placeholder: |
         Anything that may contribute to other User Stories and other Initiative effort.
