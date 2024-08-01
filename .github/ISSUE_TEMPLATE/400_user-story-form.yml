@@ -19,6 +19,7 @@ name: User Story
 description: Agile User story for initiative design and planning
 title: "[User Story]: Edit title after colon"
 labels:
+  - plan
   - story
   - triage
 projects:

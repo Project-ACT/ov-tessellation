@@ -19,6 +19,7 @@ name: Epic
 description: Agile Epic for initiative design and planning, a top-level grouping of Features and User Stories
 title: "[Epic]: Edit title after colon"
 labels:
+  - plan
   - epic
   - triage
 projects: 

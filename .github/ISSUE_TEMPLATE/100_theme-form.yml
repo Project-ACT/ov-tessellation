@@ -19,6 +19,7 @@ name: Theme
 description: Agile Theme for initiative design and planning, a top-level grouping of Epics
 title: "[Theme]: Edit title after colon"
 labels:
+  - plan
   - theme
   - triage
 projects:

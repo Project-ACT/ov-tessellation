@@ -18,6 +18,7 @@
 title: "[Feature Request]: Edit title after colon"
 labels:
   - feature
+  - req
   - triage
 body:
   - type: markdown

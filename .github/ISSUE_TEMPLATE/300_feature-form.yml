@@ -19,6 +19,7 @@ name: Feature
 description: Agile Feature for initiative design and planning, a top-level grouping of User Stories
 title: "[Feature]: Edit title after colon"
 labels:
+  - plan
   - feature
   - triage
 projects:

@@ -19,7 +19,8 @@ name: External Bug
 description: A problem report tracked here prior to triage and distillation
 title: "[External Bug]: Edit title after colon"
 labels:
-  - extbug
+  - bug
+  - external
   - triage
 projects:
   - Project-ACT/2

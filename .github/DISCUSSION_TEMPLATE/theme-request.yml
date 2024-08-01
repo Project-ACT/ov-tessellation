@@ -18,6 +18,7 @@
 title: "[Theme Request]: Edit title after colon"
 labels:
   - theme
+  - req
   - triage
 body:
   - type: markdown
