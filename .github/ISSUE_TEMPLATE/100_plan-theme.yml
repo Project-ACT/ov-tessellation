@@ -150,15 +150,22 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Wrap-Up"
+      value: "## Rolling Summary"
+
+  - type: markdown
+    attributes:
+      value: |
+        Capture discussion ongoing on this issue and other learnings for continuous improvement
+        of this issue, this overall Initiative, or other Initiatives into the future!
 
   - type: textarea
-    id: wrapup
+    id: summary
     attributes:
-      label: Wrap-up
-      description: To aid in iterative process improvement and learning
+      label: Rolling Summary
+      description: Pull discussion conclusions and update over time…
       placeholder: |
-        Anything that may contribute to ongoing success of this Theme or other parts of the Initiative effort.
+        Anything that appears in ongoing discussion and effort which may contribute to ongoing
+        success of this Theme or other parts of the Initiative effort.
 
     validations:
       required: false
