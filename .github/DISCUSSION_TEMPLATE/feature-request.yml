@@ -14,18 +14,23 @@
 # 
 # You should have received a copy of the GNU General Public License
 # along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
-
+---
 title: "[Feature Request]: Edit title after colon"
 labels:
   - feature
   - req
+  - cp-ov
   - triage
 body:
   - type: markdown
+    id: discussion_head_title
+    attributes:
+      value: "# Agile Feature Request"
+  
+  - type: markdown
+    id: discussion_head_description
     attributes:
       value: |
-        # Agile Feature Request
-
         Our Agile Feature describes a reasonably specific operation, action, input, output, user
         interface interaction, or general user (or automation) experience associated with an
         Initiative Theme.
@@ -34,34 +39,60 @@ body:
         *Feature* might be autofill formulae or adjustable column and row sizes, etc.
   
   - type: markdown
+    id: discussion_shortdesc_title
+    attributes:
+      value: "## Short Description"
+  
+  - type: markdown
+    id: discussion_shortdesc_description
+    attributes:
+      value: |
+        The text entered here will be visible via mouse over in GitHub issue summary views
+        and may be extracted with automated tools for other uses.
+
+        Please be succinct, one paragraph.
+
+  - type: textarea
+    id: shortdesc
+    attributes:
+      label: Short Description
+      description: Expound succinctly on the Title of this Feature Request
+      placeholder: Useful paragraph visible in summary views
+
+    validations:
+      required: true
+
+  - type: markdown
+    id: discussion_objective_title
     attributes:
       value: "## Objective"
 
-  - type: input
-    id: name
+  - type: markdown
+    id: discussion_objective_description
     attributes:
-      label: Name your Feature Idea
-      description: "Examples: Adjustable Columns and Rows, Sheet Reordering, Formula Drop-down, etc"
-    validations:
-      required: true
+      value: |
+        Describe the objective(s) of your Feature Request, with details, examples found
+        elsewhere, use case scenarios, or anything else you may find valuable to begin
+        this discussion…
 
   - type: textarea
     id: objective
     attributes:
-      label: What should your Feature Idea do?
+      label: Objective
       description: "A general description of the Feature you have named above"
     validations:
       required: true
 
   - type: markdown
+    id: discussion_keyresults_title
     attributes:
       value: "## Key Results"
 
   - type: textarea
     id: keyresults
     attributes:
-      label: At Least Three elements of your Feature Idea you would check
-      description: "How we know we are on the right track pursuing your Feature Idea"
+      label: Key Results
+      description: "At Least Three elements of your Feature Idea you would check"
       placeholder: |
         - A list of one or more measurable
         - and demonstrably-achieved results

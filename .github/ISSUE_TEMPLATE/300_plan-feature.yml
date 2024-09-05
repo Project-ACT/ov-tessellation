@@ -14,13 +14,14 @@
 # 
 # You should have received a copy of the GNU General Public License
 # along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
-
-name: Feature
-description: Agile Feature for initiative design and planning, a top-level grouping of User Stories
+---
+name: Feature Plan
+description: Agile Feature for initiative design and planning, groups User Stories
 title: "[Feature]: Edit title after colon"
 labels:
   - plan
   - feature
+  - cp-ov
   - triage
 projects:
   - Project-ACT/2
@@ -28,10 +29,14 @@ assignees:
   - DanHugoDanHugo
 body:
   - type: markdown
+    id: plan_head_title
+    attributes:
+      value: "# Agile Feature"
+
+  - type: markdown
+    id: plan_head_description
     attributes:
       value: |
-        # Agile Feature
-
         A **Feature** is a generalized behavior, experience, or expectation from a component of the Initiative.
         
         One or more User Stories will describe variations, subtleties, and specific considerations of a Feature,
@@ -40,6 +45,7 @@ body:
         We can describe a Feature directly as an **Objective** with measurable **Key Results** (OKRs).
 
   - type: markdown
+    id: plan_objective_title
     attributes:
       value: "## Feature Objective"
         
@@ -53,6 +59,7 @@ body:
       required: true
 
   - type: markdown
+    id: plan_keyresults_title
     attributes:
       value: "## Key Results"
         
@@ -69,26 +76,26 @@ body:
       required: true
 
   - type: markdown
+    id: plan_linking_title
     attributes:
       value: "## Issue Linking"
 
   - type: markdown
+    id: plan_linking_description
     attributes:
       value: |
-        Issues should be linked by url (see info for issue linking bottom of page) to indicate
-        graph relationship between them, with tags in a task list indicating the link relationship.
-        Identifying relationships between issues within the initiative hierarchy should
-        be easier than without this information.
+        Link issues by url (see info for issue linking bottom of page) to indicate
+        graph relationship between them, with tags in a list indicating the link relationship.
 
         Tags and Linked Issues
-        - epic: --> a parent Epic in this Agile hierarchy for this Feature
-        - story: --> a child User Story in this Agile Hierarchy for this Feature
-        - merge-to: --> a Feature that is a merging of this and other Feature(s)
-        - merge-from: <-- a Feature that was merged into this Feature
-        - split-to: --> a Feature that is one of multiple Features derived from this Feature
-        - split-from: <-- a Feature that was split into this and other Features
-        - spike-to: --> a virtual Feature for planning and estimation of related Features
-        - spike-from: <-- a real Theme connected to a virtual spike Theme
+        - :epic --> a parent Epic in this Agile hierarchy for this Feature
+        - :story --> a child User Story in this Agile Hierarchy for this Feature
+        - :merge-to --> a Feature that is a merging of this and other Feature(s)
+        - :merge-from <-- a Feature that was merged into this Feature
+        - :split-to --> a Feature that is one of multiple Features derived from this Feature
+        - :split-from <-- a Feature that was split into this and other Features
+        - :spike-to --> a virtual Feature for planning and estimation of related Features
+        - :spike-from <-- a real Theme connected to a virtual spike Theme
 
         Merge-to and Split-to Feature issue(s) should be **Closed as Not Planned** in favor of the
         consolidated or expanded Feature issue(s), as appropriate.
@@ -99,20 +106,24 @@ body:
     id: linking
     attributes:
       label: Linked Issues
-      description: "Tag entries with eg epic: , story: , merge-to: , split-from: , etc"
+      description: "Tag issue URLs with eg :epic , :story , :merge-to , :split-from , etc"
       placeholder: |
-        - epic: issue link within overview
-        - merge-to: this issue merges into a new issue
-        - split-from: this issue is one refactor from a parent Theme issue
+        - :epic issue link within overview
+        - :merge-to this issue merges into a new issue
+        - :split-from this issue is one refactor from a parent Theme issue
 
     validations:
       required: false
 
   - type: markdown
+    id: plan_issuegraph_title
+    attributes:
+      value: "## Issue Graph"
+  
+  - type: markdown
+    id: plan_issuegraph_description
     attributes:
       value: |
-        ## Issue Graph
-
         A visualization of Linked Issues as indicated above, updated programmatically, please leave as is.
 
         As issues are linked or removed, the visualization can be updated via automation.
@@ -131,6 +142,7 @@ body:
       render: mermaid
 
   - type: markdown
+    id: plan_references_title
     attributes:
       value: "## References"
         
@@ -149,10 +161,12 @@ body:
       required: false
 
   - type: markdown
+    id: plan_summary_title
     attributes:
       value: "## Rolling Summary"
 
   - type: markdown
+    id: plan_summary_description
     attributes:
       value: |
         Capture discussion ongoing on this issue and other learnings for continuous improvement
@@ -171,7 +185,12 @@ body:
       required: false
 
   - type: markdown
+    id: plan_helpful_title
+    attributes: 
+      value: "## Helpful Issue-filing Links"
+
+  - type: markdown
+    id: plan_helpful_description
     attributes: 
       value: |
-        ## Helpful Issue-filing Links
         - [Linking to Issues and PRs across Repositories](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#issues-and-pull-requests)

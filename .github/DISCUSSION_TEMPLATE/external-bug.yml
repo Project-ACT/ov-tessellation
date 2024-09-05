@@ -14,18 +14,23 @@
 # 
 # You should have received a copy of the GNU General Public License
 # along with ov-tessellation.  If not, see <https://www.gnu.org/licenses/>.
-
+---
 title: "[External Bug]: Edit title after colon"
 labels:
+  - extern
   - bug
-  - external
+  - cp-ov
   - triage
 body:
   - type: markdown
+    id: discussion_head_title
+    attributes:
+      value: "# External Bug"
+
+  - type: markdown
+    id: discussion_head_description
     attributes:
       value: |
-        # External Bug
-
         Please use this Discussion Category to describe an issue, problem, or defect
         you have encountered using one or more components of this Initiative.
 
@@ -34,31 +39,90 @@ body:
         some finding… you are using GitHub, though, which means you are a bit closer to
         the structure and inner workings than most.
 
+        Thus the term, *External*.
+
         Please take a moment to fill this in, your GitHub credentials will be used to
         attribute your contribution to this initiative unless you would rather opt out.
 
   - type: markdown
+    id: discussion_shortdesc_title
     attributes:
       value: "## Short Description"
+
+  - type: markdown
+    id: discussion_shortdesc_description
+    attributes:
+      value: |
+        The text entered here will be visible via mouse over in GitHub issue summary views
+        and may be extracted with automated tools for other uses.
+
+        Please be succinct, one paragraph.
         
   - type: textarea
     id: shortdesc
     attributes:
-      label: Brief Summary Description of the Bug
+      label: Brief Description
       description: Augments the issue title with an extended description
 
     validations:
       required: true
 
   - type: markdown
+    id: discussion_characterization_title
+    attributes:
+      value: "## Characterization" 
+
+  - type: markdown
+    id: discussion_characterization_description
+    attributes:
+      value: |
+
+        So that we can assess severity and priority scores, select at least one
+        of each item in the checkbox blocks below, for Observations and for
+        Frequency.
+
+        If you have more detail for these, please include it down below.
+
+  - type: markdown
+    id: observations
+    attributes:
+      label: Observations
+      description: Types of problems or failures observed
+      options:
+        - label: "Data Loss or Destructive Failure"
+        - label: "Crash or other self-contained Failure"
+        - label: "Unexpected behavior"
+        - label: "Explicitly incorrect behavior"
+        - label: "Does not meet expectations"
+        - label: "Untestable"
+        - label: "Cosmetic failure"
+        - label: "Security failure"
+        - label: "Privacy failure"
+
+  - type: markdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: Reproducing the observations
+      options:
+        - label: "Observed nearly 100% of the time"
+        - label: "Frequently but not consistently"
+        - label: "Infrequently but observable"
+        - label: "Difficult to observe, for unknown reasons"
+        - label: "Seems to depend on external factors"
+
+  - type: markdown
+    id: discussion_usertype_title
     attributes:
       value: "## Me as User"
 
   - type: checkboxes
+    id: usertype
     attributes:
-      label: I am a…
-      description: So we can consider some implementation specifics.
+      label: User Type (As a …)
+      description: Use context in which this bug was encountered
       options:
+        - label: "**Unknown** user type, possibly not provided"
         - label: "**Organization Maintainer** responsible for a cohort of one or more people"
         - label: "**Organization Member** is anyone considered to be a part of an organization"
         - label: "**Project Maintainer** responsible for managing project(s)"
@@ -71,23 +135,23 @@ body:
         - label: "**Visualization Maintainer** integrates graph visualizations into other platform(s)"
         - label: "**Notification Maintainer** manages integration of notifications with messaging tools and channels"
         - label: "**Tessellation Contributor** works on Tessellation components in any capacity"
+        - label: "**Any or All** user types listed above"
 
 
   - type: markdown
+    id: discussion_description_title
     attributes:
-      value: |
-        ## Full Description
-
-        As complete as possible, including what happened, what was expected to happen,
-
+      value: "## Full Description"
 
   - type: textarea
     id: description
     attributes:
-      label: Full Bug Description
-      description: Relevant configurations, inputs, outputs, what went wrong?
+      label: Detailed Description
+      description: Describe Platform, Device, Operating System, Versions, etc
       placeholder: |
-        Logs, screenshots, software, hardware, device details, versions, etc.
+        Try to be as specific and detailed as possible so that the circumstances of the bug
+        as encountered can be reproduced for debugging and fixing. There will like be continued
+        discussion as examination commences and continues.
 
     validations:
       required: true
